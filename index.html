@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: tan; /* Add tan background */
+      }
+    </style>
+  </head>
+  <body>
+    <a href="description.html">
+      <img
+        src="488879_01.jpg.webp"
+      />
+    </a>
+    <h1>This is a Travis Scott Mocha shoe</h1>
+    <p>This is also the greatest shoe of all time</p>
+    <p>If I could only wear one shoe for the rest of my life, this would be it </p>
+    <button onclick="showMore()">Show More Information</button> <!-- Add button -->
+    <div id="moreInfo" style="display: none;"> <!-- Hidden div for additional information -->
+      <a href="description.html">
+        <img
+          src="feet.jpeg"
+        />
+      </a>
+      <h1>This is also the greatest shoe of all time 🙏</h1>
+    </div>
+    <script>
+      function showMore() {
+        var moreInfoDiv = document.getElementById("moreInfo");
+        if (moreInfoDiv.style.display === "none") {
+          moreInfoDiv.style.display = "block"; // Show additional information when button is clicked
+        } else {
+          moreInfoDiv.style.display = "none"; // Hide additional information if already shown
+        }
+      }
+    </script>
+  </body>
+</html>
+
